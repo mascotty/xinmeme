@@ -12,3 +12,4 @@ dist/
 # Videos over GitHub size limit
 videos/dasaoshipin.mp4
 .vercel
+node_modules/ # 确保已在忽略列表
