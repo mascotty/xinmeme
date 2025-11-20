@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+
+# Local Node runtime we downloaded
+.node/
+node-v*/
+*.tar.xz
+
+# Build/preview temp (if any)
+dist/
+
+# Videos over GitHub size limit
+videos/dasaoshipin.mp4
+.vercel

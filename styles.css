@@ -1,0 +1,38 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { font-family: 'Noto Sans SC', system-ui, -apple-system, sans-serif; color: #e5e7eb; background: linear-gradient(135deg, #0f172a 0%, #0b1020 50%, #030712 100%); min-height: 100vh; }
+.container { max-width: 1120px; margin: 0 auto; padding: 28px; }
+.hero { display: flex; align-items: center; justify-content: center; padding: 64px 28px; background: linear-gradient(135deg, rgba(17,24,39,0.7) 0%, rgba(2,6,23,0.6) 100%); border-radius: 20px; backdrop-filter: saturate(160%) blur(6px); border: 1px solid rgba(148,163,184,0.24); box-shadow: 0 12px 28px rgba(2,6,23,0.35); }
+.hero-text { text-align: center; }
+.title { margin: 0; font-size: 34px; font-weight: 800; letter-spacing: 0.6px; background: linear-gradient(90deg, #0ea5e9, #8b5cf6, #ec4899); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.subtitle { margin: 8px 0 0; font-size: 18px; color: #cbd5e1; }
+.x-link { position: fixed; top: 16px; right: 16px; width: 48px; height: 48px; background: transparent; display: grid; place-items: center; text-decoration: none; transition: transform 0.15s ease, opacity 0.2s ease; opacity: 0.9; }
+.x-link:hover { transform: translateY(-1px); opacity: 1; }
+.x-icon { width: 32px; height: 32px; object-fit: contain; display: block; }
+.section { margin-top: 36px; background: rgba(15,23,42,0.88); border: 1px solid rgba(148,163,184,0.24); border-radius: 16px; padding: 28px; box-shadow: 0 10px 28px rgba(2,6,23,0.4); }
+.section-title { margin: 0 0 14px; font-size: 18px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #cbd5e1; }
+.section-content { font-size: 16px; line-height: 1.8; color: #e5e7eb; }
+.text { margin: 0; }
+.ca-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.ca-text { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; font-size: 16px; color: #e5e7eb; word-break: break-all; }
+.copy-btn { appearance: none; border: 1px solid #334155; background: #0ea5e9; color: #0b1020; font-weight: 600; padding: 8px 12px; border-radius: 10px; cursor: pointer; }
+.copy-btn:hover { filter: brightness(1.08); }
+.media-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.media-card { background: #0f172a; border: 1px solid #1f2937; border-radius: 14px; overflow: hidden; box-shadow: 0 8px 20px rgba(2,6,23,0.45); }
+.media-card img, .media-card video { width: 100%; height: 220px; object-fit: cover; display: block; }
+.caption { padding: 8px 10px; font-size: 14px; color: #cbd5e1; }
+.placeholder { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.placeholder-card { background: linear-gradient(135deg, #1f2937, #111827); border: 1px dashed #334155; border-radius: 12px; height: 220px; display: grid; place-items: center; color: #94a3b8; font-size: 14px; }
+.footer { margin-top: 56px; padding-top: 18px; border-top: 1px solid rgba(148,163,184,0.2); text-align: center; color: #e5e7eb; font-size: 13px; }
+@media (max-width: 768px) { .media-grid, .placeholder { grid-template-columns: 1fr 1fr; } .hero { padding: 36px 14px; } .title { font-size: 28px; } }
+@media (max-width: 480px) { .media-grid, .placeholder { grid-template-columns: 1fr; } .title { font-size: 24px; } }
+.video-container { background: #0f172a; border: 1px solid #1f2937; border-radius: 14px; overflow: hidden; box-shadow: 0 8px 24px rgba(2,6,23,0.45); }
+.video-player { width: 100%; height: 440px; object-fit: cover; display: block; }
+@media (max-width: 768px) { .video-player { height: 320px; } }
+@media (max-width: 480px) { .video-player { height: 240px; } }
+.htb-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+.htb-card { background: #0f172a; border: 1px solid #1f2937; border-radius: 16px; padding: 18px; box-shadow: 0 10px 28px rgba(2,6,23,0.35); }
+.htb-icon { display: inline-block; background: linear-gradient(135deg, #0ea5e9, #8b5cf6); color: #0b1020; font-weight: 800; padding: 6px 12px; border-radius: 999px; margin-bottom: 12px; }
+.htb-title { font-size: 18px; font-weight: 700; color: #e5e7eb; margin-bottom: 8px; }
+.htb-desc { font-size: 15px; color: #cbd5e1; line-height: 1.75; }
+@media (max-width: 480px) { .htb-grid { grid-template-columns: 1fr; } }
