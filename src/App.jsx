@@ -5,6 +5,7 @@ import dasao2 from '../images/dasao2.jpg'
 import dasao3 from '../images/dasao3.png'
 import video1 from '../videos/dasaoshipin.mp4'
 
+
 const content = {
   title: '东南亚最后一个大嫂',
   person: '武氏庄',
